@@ -1,0 +1,31 @@
+#! /bin/sh
+
+python gan/main.py --train_mode False \
+    --data_folder d_small_kg3_nooutlier_auxl_1m --run_folder_name run_d_small_kg3_nooutlier_auxl_1m_rmse_densefeat \
+    --dataset_name train --model_name model \
+    --epoch 400 --batch_size 100 --sample_len 24 \
+    --d_rounds 1 --g_rounds 1 \
+    --g_feature_feedback False --g_feature_noise True \
+    --g_attribute_latent_dim 5 --g_attribute_num_layers 3 --g_attribute_num_units 100 \
+    --g_feature_latent_dim 5 --g_feature_num_layers 2 --g_feature_num_units 200 \
+    --d_num_layers 5 --d_num_units 200 \
+    --d_auxl_num_layers 5 --d_auxl_num_units 200 \
+    --train_with_auxl_signal True \
+    --addi_attr_power_transform False \
+    --train_with_rmse_loss True \
+    --epoch_checkpoint_freq 1 --vis_freq 300 --vis_num_sample 2 ;
+
+python gan/main.py --train_mode False \
+    --data_folder d_small_kg3_nooutlier_auxl_1m --run_folder_name run_d_small_kg3_nooutlier_auxl_1m_rmse_densefeat \
+    --dataset_name test --model_name model \
+    --epoch 400 --batch_size 100 --sample_len 24 \
+    --d_rounds 1 --g_rounds 1 \
+    --g_feature_feedback False --g_feature_noise True \
+    --g_attribute_latent_dim 5 --g_attribute_num_layers 3 --g_attribute_num_units 100 \
+    --g_feature_latent_dim 5 --g_feature_num_layers 2 --g_feature_num_units 200 \
+    --d_num_layers 5 --d_num_units 200 \
+    --d_auxl_num_layers 5 --d_auxl_num_units 200 \
+    --train_with_auxl_signal True \
+    --addi_attr_power_transform False \
+    --train_with_rmse_loss True \
+    --epoch_checkpoint_freq 1 --vis_freq 300 --vis_num_sample 2 ;
