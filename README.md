@@ -1,5 +1,7 @@
-# DemAEndGAN --- Cross-modal hourly building energy demand prediction with Autoencoders and Generative Adversarial Networks
+# DemAEndGAN: Cross-modal hourly building energy demand prediction with Autoencoders and Generative Adversarial Networks
+
 [Bernadino Bernadino](https://www.linkedin.com/in/bernadino/), [Christoph Waibel](https://www.linkedin.com/in/christoph-waibel-19205114b/)
+
 [[ Paper ]](https://doi.org/10.1016/j.enbuild.2026.117334)
 
 ## Table of Contents
@@ -21,7 +23,9 @@ This repository contains the code and resources for demAEndGAN architecture, whi
 2. Navigate to the project directory.
 3. Create a virtual environment with Python >= 3.9.
 4. Install dependencies:
+
     ``` pip install -r .\pytorch_requirements.txt. ```
+
     ``` pip install -r .\others_requirements.txt. ```
 
 ## Data
