@@ -5,6 +5,7 @@
 - [Installation](#installation)
 - [Data](#data)
 - [Usage](#usage)
+- [Citation](#citation)
 - [Special thanks](#thanks)
 - [License](#license)
 
@@ -43,6 +44,31 @@ Data may be granted upon reasonable requests.
     - It is recommended to use batch scripts to perform instructions with examples: [_batch_scripts](timeseries_generator/_batch_scripts/)
     - Data should be put in a folder, which by default, is defined as "_data". Custom folder name for data can be done, but with explicit declaration to the batch scripts.
     - Trained models as used in this study are saved under [trained_model_](timeseries_generator/trained_model_/)
+
+## Citation
+### IEEE: 
+```text
+B. Bernadino and C. Waibel, ‘DemAEndGAN: Cross-modal hourly building energy demand prediction with autoencoders and generative adversarial networks’, Energy and Buildings, vol. 360, p. 117334, Jun. 2026, doi: 10.1016/j.enbuild.2026.117334.
+```
+
+### BibTeX:
+```bibtex
+@article{BERNADINO_2026117334,
+	title = {{DemAEndGAN}: {Cross}-modal hourly building energy demand prediction with autoencoders and generative adversarial networks},
+	volume = {360},
+	issn = {0378-7788},
+	shorttitle = {{DemAEndGAN}},
+	url = {https://www.sciencedirect.com/science/article/pii/S0378778826003944},
+	doi = {https://doi.org/10.1016/j.enbuild.2026.117334},
+	language = {en},
+	urldate = {2026-03-24},
+	journal = {Energy and Buildings},
+	author = {Bernadino, Bernadino and Waibel, Christoph},
+	year = {2026},
+	keywords = {Surrogate model, Data-driven, Building energy modelling (BEM), Generative artificial intelligence (GenAI), Hourly demand prediction, Stochastic urban building energy modelling (UBEM)},
+	pages = {117334},
+}
+```
 
 ## Thanks
 Special thanks are given to the authors of these repositories, which demAEndGAN is adapted from:
